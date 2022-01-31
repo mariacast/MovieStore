@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<link href="/static/css/style.css" rel="stylesheet">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Iniciar Sesión</title>
+  </head>
+  <body>
+    <form class="form2" method="post">
+      <h2>Iniciar Sesión</h2>
+      {% csrf_token %}
+
+
+      <p type="Usuario:"><input name="username"></input></p>
+      <p type="Contraseña:"><input type="password" name="password"></input></p>
+      <button type="submit">Ingresar</button>
+      <div>
+
+        <span class="fa fa-envelope-o"></span> Drud Movie Store.
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,414 @@
+{
+	"info": {
+		"_postman_id": "3be00234-574d-49ce-93f8-81988a3cae57",
+		"name": "DrudMovieStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/MovieApiView/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/MovieApiView/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"MovieApiView",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/MovieApiView/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/MovieApiView/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"MovieApiView",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 30 Jan 2022 23:54:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "365"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"title\": \"crepusculo\",\n        \"genre\": \"Ficcion\",\n        \"year\": \"2022-01-28\",\n        \"director\": \"andres guerra\"\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Saw\",\n        \"genre\": \"Terror\",\n        \"year\": \"2010-05-05\",\n        \"director\": \"Felipe Cuevas\"\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Superman\",\n        \"genre\": \"Acción\",\n        \"year\": \"2018-06-07\",\n        \"director\": \"Alexander Diaz\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Batman\",\n        \"genre\": \"Ficcion\",\n        \"year\": \"2022-01-15\",\n        \"director\": \"Hugo Lopez\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/MovieApiView/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Luna Nueva",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Ficcion",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2011-01-28",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "Guillermo Ospina",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/MovieApiView/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Luna Nueva",
+									"type": "text"
+								},
+								{
+									"key": "genre",
+									"value": "Ficcion",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2011-01-28",
+									"type": "text"
+								},
+								{
+									"key": "director",
+									"value": "Guillermo Ospina",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/MovieApiView/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"MovieApiView",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 30 Jan 2022 23:58:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "97"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9,\n    \"title\": \"Luna Nueva\",\n    \"genre\": \"Ficcion\",\n    \"year\": \"2011-01-28\",\n    \"director\": \"Guillermo Ospina\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/MovieApiView/3/",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/MovieApiView/3/",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Amanecer",
+									"type": "text"
+								},
+								{
+									"key": "genre",
+									"value": "Romance",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2012-07-01",
+									"type": "text"
+								},
+								{
+									"key": "director",
+									"value": "Andres Lopez",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/MovieApiView/3/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"MovieApiView",
+								"3",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 31 Jan 2022 00:04:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"title\": \"Amanecer\",\n    \"genre\": \"Romance\",\n    \"year\": \"2012-07-01\",\n    \"director\": \"Andres Lopez\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/MovieApiView/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/MovieApiView/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"MovieApiView",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/MovieApiView/",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/MovieApiView/6/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"MovieApiView",
+								"6",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 31 Jan 2022 00:05:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.9"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

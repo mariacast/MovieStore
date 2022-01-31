@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block titulo %}Crear Pelicula{% endblock  %}
+{% block content %}
+        <div class="row justify-content-center">
+
+          <div class="col-xl-4 col-lg-12 col-md-6" >
+        <div class="card o-hidden border-5 shadow-lg my-5">
+
+
+                <div class="p-5">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Crear Pelicula</h1>
+                  </div>
+
+                  <form class="user"  method=post >
+                      {% csrf_token %}
+                    
+                      <label for="title">Titulo</label><br>
+                      <input name="title"></input><br>
+                      <label for="genre">Genero</label><br>
+                      <input name="genre"></input><br>
+                      <label for="year">Fecha</label><br>
+                      <input type="date" name="year"></input><br>
+                      <label for="director">Director</label><br>
+                      <input name="director"></input><br><br>
+                      <button type="submit" class="btn btn-primary btn-user btn-block">
+                        Guardar
+                      </button>
+                  </form>
+                </div>
+              </div>
+
+
+
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+{% endblock %}

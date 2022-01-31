@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<link href="/static/css/style.css" rel="stylesheet">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registrar Usuario</title>
+  </head>
+  <body>
+    <form class="form" method="post">
+      <h2>Registrar Usuario</h2>
+      {% csrf_token %}
+    
+      <p type="Nombre:"><input name="first_name"></input></p>
+      <p type="Apellidos:"><input name="last_name"></input></p>
+      <p type="Usuario:"><input name="username"></input></p>
+      <p type="Correo:"><input  name="email"></input></p>
+      <p type="Contraseña:"><input type="password" name="password1"></input></p>
+      <p type="Confirmar Contraseña:"><input type="password" name="password2"></input></p>
+
+      <button type="submit">Guardar</button>
+      <div>
+
+        <span class="fa fa-envelope-o"></span> Drud Movie Store.
+      </div>
+    </form>
+  </body>
+</html>

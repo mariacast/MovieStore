@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block titulo %}Eliminar Pelicula{% endblock  %}
+{% block content %}
+        <div class="row justify-content-center">
+
+          <div class="col-xl-4 col-lg-12 col-md-6" >
+        <div class="card o-hidden border-5 shadow-lg my-5">
+
+
+                <div class="p-5">
+
+
+                  <form class="user"  method=post >
+                      {% csrf_token %}
+                      <div class="text-center">
+                        <h1 class="h4 text-gray-900 mb-4">Desea Eliminar la pelicula {{ object }}?</h1>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-danger btn-block">
+                        Confirmar
+                      </button>
+
+                  </form>
+                </div>
+              </div>
+
+
+
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+{% endblock %}
